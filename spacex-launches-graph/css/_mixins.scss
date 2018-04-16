@@ -1,0 +1,10 @@
+//Mixins Stuff
+//@include <name>
+
+@mixin flex($direction,$axis,$cross,$wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $axis;
+  align-items: $cross;
+  wrap: $wrap;
+}

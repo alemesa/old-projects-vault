@@ -1,0 +1,34 @@
+@import './variables';
+@import './mixins';
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  h1 {
+    font-family: 'Space Mono', monospace;
+  }
+  canvas {
+    width: 80% !important;
+    height: 60% !important;
+  }
+  img {
+    text-align: center;
+    width: 200px;
+    transform: translateX(20px);
+  }
+  .line-top {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0;
+    background-color: rgba(54, 162, 235, 1);
+  }
+}
