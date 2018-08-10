@@ -2,7 +2,7 @@
 
 As a student, I wanted to do something simple with any API. I also wanted it to be legal, so I used the YTS API in a node project to fetch movie details. It is just for fun.
 
-![screenshot of the node app](/src/img.png?raw=true)
+![screenshot of the node app](movie-cli/src/img.png?raw=true)
 
 API does not require any key.
 
