@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  TITLE    -->
+    <title>Mysterium</title>
+
+    <!--  FAVICON    -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">`
+
+    <!--   FONT-AWESOME AND GOOGLE FONTS     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+
+    <!-- BOOTSTRAP AND CSS STYLESHEETS       -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
+    <link href="styles/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+
+
+</head>
+
+
+
+
+<body>
+
+    <!--    STICKY NAVBAR-->
+
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+
+                <img class="navbar-brand" id="logo" src="img/favicon.png">
+                <a href="index.html" class="navbar-brand">Mysterium</a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+
+                    <li class="dropdown">
+                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">List
+                            <div class="caret"></div>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="index.html#monster">Monsters</a></li>
+
+
+
+                            <li><a href="index.html#places">Places</a></li>
+
+                            <li><a href="index.html#other">Others</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li><a href="ww2.html">WW2</a></li>
+                    <li><a href="scroll.html">Real Madrid</a></li>
+
+                    <li><a href="contact.html">Gallery</a></li>
+                    <li class="active"><a href="accordion.html">FAQ</a></li>
+
+
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn btn-default navbar-btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="disabled"><a href="#">English</a></li>
+                                <li><a href="#">French</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+                </ul>
+
+
+
+
+
+
+
+
+
+                <div class="button_menu">
+
+
+
+
+
+                    <button type="button" class="btn btn-success navbar-btn navbar-right" data-toggle="modal" data-target="#myModal">
+                        Register
+                    </button>
+
+
+                    <button type="button" class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#myModal2">
+                        Sign In
+                    </button>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!--    MODAL FOR REGISTER-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Register</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input type="text" class="form-control" id="exampleInputName1" placeholder="&#xf007; Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="&#xf0e0; Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="&#xf13e; Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="&#xf13e; Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <p>Your Interests:</p>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1"> Places
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2"> Monsters
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3"> History
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox4" value="option4"> Cover-Ups
+                            </label>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Register</button>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--    MODAL FOR SIGN IN-->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="&#xf0e0; Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="&#xf13e; Password">
+                        </div>
+
+
+
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign In</button>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--    CONTENT-->
+
+    <div class="wrapper">
+
+        <div class="container-fluid">
+            <div class="page-header">
+                <h1>Web Technologies <small>Support</small></h1>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="container col-md-7 col-xs-12">
+
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+        <a class="collapsed btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          HTML & CSS
+        </a>
+      </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <img class="col-xs-3" src="img/html.png"> HTML – all code in a web application is eventually translated to HTML. It’s the language that web browsers understand and use to display information to users. A web developer’s understanding of HTML is analogous to a carpenter’s understanding of a screwdriver. It’s so important and necessary that it’s often assumed for employment.
+                                    <br>
+                                    <br> CSS – by itself, HTML is quite plain. HTML does provide some basic style options, but to build a good frontend developers must have experience with CSS. CSS provides the paint, templates, glitter, buttons, tassel, lights, and many other things that can be used to improve the presentation of a web page. CSS is so commonly used that languages have been built to make writing CSS easier. These languages – like Sass and LESS – are also known as CSS precompilers, but they are simply used to write more efficient and manageable CSS code.
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+        <a class="collapsed btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Javascript
+        </a>
+      </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <img class="col-xs-3" src="img/javascript.png">JavaScript – if you could only learn one language in your lifetime, you’d be well-advised to choose JavaScript. Though it’s not exclusively a frontend language, that’s where it’s most commonly used. JavaScript is a language that is run on a client machine, i.e. a user’s computer. This means that JavaScript can be used to program fast, intuitive and fun user experiences, without forcing a user to refresh their web page. Drag-and-drop, infinite-scroll and videos that come to life on a web page can all be programmed with JavaScript.
+                                    <br>JavaScript is so popular that entire frameworks have been built just to make building application frontends easier. Frameworks like Angular, Ember, React and Backbone are all very widely used for JavaScript-heavy frontends.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+        <a class="collapsed btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          jQuery
+        </a>
+      </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <img class="col-xs-3" src="img/jquery.svg"> jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. jQuery is the most popular JavaScript library in use today, with installation on 65% of the top 10 million highest-trafficked sites on the Web. jQuery is free, open-source software licensed under the MIT License.
+                                    <br> jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, theme-able widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFourth">
+                                <h4 class="panel-title">
+        <a class="collapsed btn-block" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFourth" href="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+          Bootstrap
+        </a>
+      </h4>
+                            </div>
+                            <div id="collapseFourth" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourth">
+                                <div class="panel-body">
+                                    <img class="col-xs-3" src="img/bootstrap.png">Bootstrap is a free and open-source collection of tools for creating websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. It aims to ease the development of dynamic websites and web applications.
+                                    <br> Bootstrap is a front end web framework, that is, an interface for the user, unlike the server-side code which resides on the "back end" or server.
+                                    <br> Bootstrap is the second most-starred project on GitHub, with over 93K stars and more than 40K forks.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="specific_question container col-md-5 col-xs-12">
+
+                    <div class="question">
+
+                        <form>
+                            <h5>Have a question?</h5>
+
+                            <div class="form-group">
+                                <label for="exampleInputName1">Name</label>
+                                <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email </label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputTextarea1">Question </label>
+                                <textarea class="form-control" rows="4" placeholder="Question"></textarea>
+                            </div>
+                            <!--                           <button type="submit" class="btn btn-success">Submit</button>-->
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#submitModal">Submit</button>
+
+                            <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                                <div class="modal-dialog modal-md" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4>Thank You</h4></div>
+
+                                        <div class="modal-body">
+                                            <p>Your question will be answered in a 24 hours period</p>
+                                            <p>For further questions contact us here:</p>
+                                            <ul>
+                                                <li><a href="tel:+1 650-253-0000">+1 650-253-0000</a></li>
+
+
+                                                <li> <a href="mailto:lordofwinterfell91@gmail.com">lordofwinterfell91@gmail.com</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </form>
+
+                        <hr>
+                        <h5>Copyright</h5>
+                        <p>I do not intend to break any copyright rules. I used Wikipedia, Blogs and free resources for the information on this website. The only purpose is too practice the web technologies to build websites. If there is any copyright issue pls write me at
+                            <email>alejandro.mesa1991@gmail.com</email> and it will be fixed quickly. Thanks </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gutter"></div>
+
+
+    <!--STICKY FOOTER-->
+
+    <div class="footer_wrap">
+        <footer class="navbar navbar-default navbar-bottom">
+
+
+            <div class="row">
+
+
+
+                <div class="container col-md-4 col-sm-6 col-xs-12">
+
+                    <ul class="social_links">
+                        <li><a class="" href="#1"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+
+                        <li><a class="" href="#2"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+
+                        <li><a class="" href="#3"><i class="fa fa-github fa-2x"></i></a></li>
+
+                        <li><a class="" href="#4"><i class="fa fa-linkedin fa-2x"></i></a></li>
+
+                        <li><a class="" href="#4"><i class="fa fa-instagram fa-2x"></i></a></li>
+
+
+
+                    </ul>
+
+                    <ul class="menu_links">
+
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="index.html#general">List</a>
+                        </li>
+
+                        <li><a href="ww2.html">WW2</a>
+                        </li>
+                        <li><a href="scroll.html">Madrid</a>
+                        </li>
+                        <li><a href="contact.html">Gallery</a>
+                        </li>
+                        <li><a href="accordion.html">FAQ</a>
+                        </li>
+
+
+
+
+                    </ul>
+
+
+
+                </div>
+
+                <div class="container col-md-4 col-sm-6 col-xs-12">
+                    Contact Us:
+                    <br>
+                    <a href="tel:+1 650-253-0000">+1 650-253-0000</a>
+
+
+                    <a href="mailto:lordofwinterfell91@gmail.com">lordofwinterfell91@gmail.com</a>
+                    <br>
+
+                    <address>
+Company Address:<br> 
+
+1600 Amphitheatre Pkwy<br>
+Mountain View, CA 94043<br>
+United States
+</address>
+
+
+                </div>
+
+
+                <div class="container col-xs-12 col-sm-12 col-md-4  ">
+
+
+                    <div class="row">
+
+                        <div class="container col-xs-12 col-sm-6 col-md-12">
+
+                            Subscribe to our newsletter:
+                            <br>
+                            <form>
+                                <input type="email" name="user_email" placeholder="&#xf0e0; Enter your email">
+                                <input class="newsletter_button" type="submit" value="Submit">
+                            </form>
+                            <br>
+
+                        </div>
+                        <div class="container col-xs-12 col-sm-6 col-md-12 ">
+                            <div class="legal">
+
+                                <div class="money_icons">
+                                    <i class="fa fa-cc-amex fa-lg"></i>
+                                    <i class="fa fa-cc-mastercard fa-lg"></i>
+                                    <i class="fa fa-cc-visa fa-lg"></i>
+                                    <i class="fa fa-cc-paypal fa-lg"></i>
+                                    <i class="fa fa-google-wallet fa-lg"></i>
+
+                                </div>
+
+                                Copyright <i class="fa fa-copyright"></i> Ale, LLC, Site built by
+                                <br> Spartacus <i class="fa fa-copyright"></i>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- My Scripts -->
+    <script async src="scripts/main.js"></script>
+</body>
+
+</html>

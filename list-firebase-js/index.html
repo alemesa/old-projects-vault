@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>To-Read List</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png">
+
+
+</head>
+
+<body>
+  <div class="ui menu">
+    <a class="item" href="http://es6-features.org" target="_blank"><img src="http://kendsnyder.com/wp-content/uploads/2015/08/post-32696984.png" alt="ES6" title="ECMAScript 2015"/></a>
+    <a class="item" href="https://firebase.google.com/" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png" alt="Firebase" title="Firebase"/></a>
+    <a class="item" href="https://semantic-ui.com/" target="_blank"><img src="http://semantic-ui.com/images/logo.png" alt="Semantic" title="Semantic UI"/></a>
+  </div>
+
+  <div id="app">
+    <div id="top" class="ui raised very padded text container segment">
+      <h2 class="ui header"><i class="fa fa-book" aria-hidden="true"></i> Books to Read</h2>
+      <div class="ui input">
+        <input id="title" type="text" placeholder="Book Title">
+
+      </div><br>
+
+      <div class="ui input">
+        <input id="author" type="text" placeholder="Author">
+
+      </div><br>
+      <div class="ui tiny negative message">
+        <div class="header">
+          Need both values in order to be enter into the database
+        </div>
+      </div><br>
+      <button id="submitButton" class="ui green button">Submit</button>
+
+      <button id="clearButton" class="ui red button">Clear</button>
+
+      <button id="restoreButton" class="ui blue button">Restore Defaults</button>
+
+    </div>
+
+
+    <div class="ui raised very padded text container segment">
+      <h2 class="ui header"><i class="fa fa-list" aria-hidden="true"></i> Book List <span id="count"></span></h2>
+
+
+      <div id="mainText">
+
+        <div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <footer class="ui raised segment">
+      <a href="https://twitter.com/alelikesramen?lang=en" target="_blank"><i title="Twitter" class="fa fa-twitter fa-2x"></i></a>
+      <a href="https://github.com/alemesa" target="_blank"><i title="Github" class="fa fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/alejandro-mesa-suarez-604916a2/" target="_blank"><i title="Linkedin" class="fa fa-linkedin fa-2x"></i></a>
+    </footer>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+      <script src='https://www.gstatic.com/firebasejs/3.6.8/firebase.js'></script>
+
+      <script src="js/dist/index.js"></script>
+
+</body>
+
+</html>

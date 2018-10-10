@@ -1,0 +1,32 @@
+{
+  "name": "Mysteries-Bootstrap",
+  "version": "1.0.0",
+  "description": "Bootstrap Website - 2nd site I made while learning on Codeschool and Treehouse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alemesa1991/Mysteries-Bootstrap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alemesa1991/Mysteries-Bootstrap/issues"
+  },
+  "homepage": "https://github.com/alemesa1991/Mysteries-Bootstrap#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-surge": "^0.1.0"
+  }
+}

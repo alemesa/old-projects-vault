@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  TITLE    -->
+    <title>Mysterium</title>
+
+    <!--  FAVICON    -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">`
+
+    <!--   FONT-AWESOME AND GOOGLE FONTS     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+
+    <!-- BOOTSTRAP AND CSS STYLESHEETS       -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
+    <link href="styles/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+
+
+</head>
+
+
+
+
+<body>
+
+    <!--    STICKY NAVBAR-->
+
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+
+                <img class="navbar-brand" id="logo" src="img/favicon.png">
+                <a href="index.html" class="navbar-brand">Mysterium</a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+
+                    <li class="dropdown">
+                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">List
+                            <div class="caret"></div>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="index.html#monster">Monsters</a></li>
+
+
+
+                            <li><a href="index.html#places">Places</a></li>
+
+                            <li><a href="index.html#other">Others</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li><a href="ww2.html">WW2</a></li>
+                    <li><a href="scroll.html">Real Madrid</a></li>
+
+                    <li class="active"><a href="contact.html">Gallery</a></li>
+                    <li><a href="accordion.html">FAQ</a></li>
+
+
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn btn-default navbar-btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="disabled"><a href="#">English</a></li>
+                                <li><a href="#">French</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+                </ul>
+
+
+
+
+
+
+
+
+
+                <div class="button_menu">
+
+
+
+
+
+                    <button type="button" class="btn btn-success navbar-btn navbar-right" data-toggle="modal" data-target="#myModal">
+                        Register
+                    </button>
+
+
+                    <button type="button" class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#myModal2">
+                        Sign In
+                    </button>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!--    MODAL FOR REGISTER-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Register</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input type="text" class="form-control" id="exampleInputName1" placeholder="&#xf007; Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="&#xf0e0; Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="&#xf13e; Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="&#xf13e; Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <p>Your Interests:</p>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1"> Places
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2"> Monsters
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3"> History
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox4" value="option4"> Cover-Ups
+                            </label>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Register</button>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--    MODAL FOR SIGN IN-->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="&#xf0e0; Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="&#xf13e; Password">
+                        </div>
+
+
+
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign In</button>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--    CONTENT-->
+
+
+    <div class="wrapper">
+
+        <div class="page-header">
+            <h1>Huskies Gallery <small>Because puppies make everything better</small></h1>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-xs-6 col-md-3">
+                <a href="img/husky/husky1.jpg" class="thumbnail" data-lightbox="galleria" data-title="Sexy Beautiful">
+                    <img src="img/husky/husky1.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="img/husky/husky2.jpg" class="thumbnail" data-lightbox="galleria" data-title="Sleepy Husky">
+                    <img src="img/husky/husky2.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="img/husky/husky3.jpg" class="thumbnail" data-lightbox="galleria" data-title="Serious Husky">
+                    <img src="img/husky/husky3.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="img/husky/husky4.jpg" class="thumbnail" data-lightbox="galleria" data-title="Funny Husky">
+                    <img src="img/husky/husky4.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="img/husky/husky5.jpg" class="thumbnail" data-lightbox="galleria" data-title="Bunch of husky puppies">
+                    <img src="img/husky/husky5.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="img/husky/husky6.jpg" class="thumbnail" data-lightbox="galleria" data-title="Not Happy Husky">
+                    <img src="img/husky/husky6.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="img/husky/husky7.jpg" class="thumbnail" data-lightbox="galleria" data-title="Very black Husky">
+                    <img src="img/husky/husky7.jpg" alt="...">
+                </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <a href="img/husky/husky8.jpg" class="thumbnail" data-lightbox="galleria" data-title="Marcel Alejandro The Infiltred Black Lab">
+                    <img src="img/husky/husky8.jpg" alt="...">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gutter"></div>
+
+
+
+
+
+    <!--STICKY FOOTER-->
+
+    <div class="footer_wrap">
+        <footer class="navbar navbar-default navbar-bottom">
+
+
+            <div class="row">
+
+
+
+                <div class="container col-md-4 col-sm-6 col-xs-12">
+
+                    <ul class="social_links">
+                        <li><a class="" href="#1"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+
+                        <li><a class="" href="#2"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+
+                        <li><a class="" href="#3"><i class="fa fa-github fa-2x"></i></a></li>
+
+                        <li><a class="" href="#4"><i class="fa fa-linkedin fa-2x"></i></a></li>
+
+                        <li><a class="" href="#4"><i class="fa fa-instagram fa-2x"></i></a></li>
+
+
+
+                    </ul>
+
+                    <ul class="menu_links">
+
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="index.html#general">List</a>
+                        </li>
+
+                        <li><a href="ww2.html">WW2</a>
+                        </li>
+                        <li><a href="scroll.html">Madrid</a>
+                        </li>
+                        <li><a href="contact.html">Gallery</a>
+                        </li>
+                        <li><a href="accordion.html">FAQ</a>
+                        </li>
+
+
+
+
+                    </ul>
+
+
+
+                </div>
+
+                <div class="container col-md-4 col-sm-6 col-xs-12">
+                    Contact Us:
+                    <br>
+                    <a href="tel:+1 650-253-0000">+1 650-253-0000</a>
+
+
+                    <a href="mailto:lordofwinterfell91@gmail.com">lordofwinterfell91@gmail.com</a>
+                    <br>
+
+                    <address>
+Company Address:<br> 
+
+1600 Amphitheatre Pkwy<br>
+Mountain View, CA 94043<br>
+United States
+</address>
+
+
+                </div>
+
+
+                <div class="container col-xs-12 col-sm-12 col-md-4  ">
+
+
+                    <div class="row">
+
+                        <div class="container col-xs-12 col-sm-6 col-md-12">
+
+                            Subscribe to our newsletter:
+                            <br>
+                            <form>
+                                <input type="email" name="user_email" placeholder="&#xf0e0; Enter your email">
+                                <input class="newsletter_button" type="submit" value="Submit">
+                            </form>
+                            <br>
+
+                        </div>
+                        <div class="container col-xs-12 col-sm-6 col-md-12 ">
+                            <div class="legal">
+
+                                <div class="money_icons">
+                                    <i class="fa fa-cc-amex fa-lg"></i>
+                                    <i class="fa fa-cc-mastercard fa-lg"></i>
+                                    <i class="fa fa-cc-visa fa-lg"></i>
+                                    <i class="fa fa-cc-paypal fa-lg"></i>
+                                    <i class="fa fa-google-wallet fa-lg"></i>
+
+                                </div>
+
+                                Copyright <i class="fa fa-copyright"></i> Ale, LLC, Site built by
+                                <br> Spartacus <i class="fa fa-copyright"></i>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- My Scripts -->
+    <script async src="scripts/main.js"></script>
+    <script async src="scripts/lightbox.js"></script>
+</body>
+
+</html>

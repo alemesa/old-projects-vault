@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "workbench.colorCustomizations": {
+        "statusBarBackground":"#0D47A1",
+        "activityBarBackground":"#212121",
+        "activityBadgeBackground":"#f44336",
+        "sideBarBackground": "#212121",
+        "panelActiveTitleBorder": "#FDD835",
+        "activeTabBackground": "#212121",
+        "tabBorder": "#212121",
+        "editorLineNumbers": "#757575",
+        "panelBackground": "#212121"
+    }
+}

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800");
+@font-face {
+  font-family: Radnika;
+  src: url(./fonts/Radnika-Medium.otf); }
+
+body {
+  height: 100%;
+  background-color: #ce5a57;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23444c57' fill-opacity='0.86'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+
+* {
+  font-family: Radnika, sans-serif;
+  color: #202020;
+  font-weight: 400; }
+
+img {
+  width: 230px; }
+
+#app {
+  background-color: #fff;
+  box-shadow: 0 3px 2px #777;
+  width: 70%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1em;
+  margin: 1em auto;
+  border-radius: 2px 2px 2px 2px; }
+
+h4 i {
+  margin-right: 5px; }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1em; }
+  .row .image {
+    -ms-flex: 1 1 40%;
+    flex: 1 1 40%;
+    margin: 0 auto;
+    text-align: center; }
+    .row .image img {
+      margin: 0 auto;
+      text-align: center; }
+  .row .info1 {
+    line-height: 1.4;
+    word-spacing: 1px;
+    color: rgba(0, 0, 0, 0.7);
+    -ms-flex: 1 1 59%;
+    flex: 1 1 59%; }
+    .row .info1 a {
+      color: rgba(0, 0, 0, 0.7);
+      text-decoration: none;
+      border-bottom: 1px solid black; }
+    .row .info1 * {
+      margin-top: 9px;
+      margin-bottom: 9px; }
+  .row .info2 {
+    padding-left: 1em;
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%; }
+    .row .info2 * {
+      margin-top: 9px;
+      margin-bottom: 9px; }
+  .row .info3 {
+    padding-left: 1em;
+    -ms-flex: 1 1 45%;
+    flex: 1 1 45%; }
+    .row .info3 span {
+      margin-left: 5px; }
+    .row .info3 img {
+      vertical-align: middle;
+      margin-bottom: 0.75em; }
+    .row .info3 * {
+      margin-top: 9px;
+      margin-bottom: 9px; }
+
+body {
+  color: #212121; }
+
+.row:nth-child(odd) {
+  padding-top: 10px; }
+
+.title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
+  .title * {
+    padding: 0px 4px; }
+
+#status {
+  line-height: 1.5em; }
+
+.search {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .search * {
+    margin: 4px 4px; }
+
+.flex-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .flex-container * {
+    padding-right: 8px; }
+
+input {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+  width: 220px;
+  padding: 4px;
+  outline: inherit; }
+
+.btn {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+  padding: 4px;
+  color: #1565c0;
+  border-color: #1565c0; }
+  .btn:hover {
+    border: 1px solid;
+    color: #fff;
+    outline: 0; }
+  .btn:focus {
+    outline: 0; }
+  .btn:hover {
+    border-color: #1565c0;
+    box-shadow: 0 0 40px 40px #1565c0 inset; }
+
+#clear {
+  color: #d32f2f;
+  border-color: #d32f2f; }
+  #clear:hover {
+    border-color: #d32f2f;
+    box-shadow: 0 0 40px 40px #d32f2f inset; }
+  #clear:hover {
+    border: 1px solid;
+    color: #fff;
+    outline: 0; }
+
+.icons {
+  width: 32px;
+  height: 32px; }
+
+.fa-imdb {
+  color: #eccd4c; }

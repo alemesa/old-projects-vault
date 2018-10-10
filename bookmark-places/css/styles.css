@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.notification {
+  padding: 0.4rem;
+  transition: 0.5s all ease-in; }
+
+#errorNotification {
+  background-color: #f44336 !important; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: inherit; }
+
+article {
+  -ms-flex: 1;
+  flex: 1; }
+
+body {
+  background: url("../images/pattern.png") repeat; }
+
+#wrapper {
+  -ms-flex: 1;
+  flex: 1;
+  width: 60%;
+  margin: 0 auto;
+  background: white; }
+
+.media {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.media-content .content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+a {
+  text-decoration: none; }
+
+.hero-body {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.5rem 0.75rem; }
+
+#logo {
+  width: 80px; }
+
+.logo-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.is-mobile {
+  padding: 20px 0px 0px 0px; }
+
+#instructions {
+  font-size: 1rem;
+  font-style: italic; }
+
+.footer {
+  width: 60%;
+  margin: 0 auto;
+  padding: 3rem 1rem 2rem 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: white; }
+
+.fa-github:hover {
+  color: #161614; }
+
+.fa-linkedin:hover {
+  color: #006087; }
+
+.fa-instagram:hover {
+  color: #FF0305; }
+
+.fa-twitter:hover {
+  color: #55ACEE; }
+
+.fa-github {
+  color: #161614; }
+
+.fa-linkedin {
+  color: #006087; }
+
+.fa-instagram {
+  color: #FF0305; }
+
+.fa-twitter {
+  color: #55ACEE; }
+
+.fa {
+  transition: 0.4s all ease-in; }
+
+.fa:hover {
+  transform: rotate(-360deg) scale(1.3); }
+
+.fa-beer:hover {
+  transform: rotate(90deg); }
+
+@media only screen and (max-width: 420px) {
+  /* Styles */
+  #wrapper {
+    width: 90%; }
+  .footer {
+    width: 90%; }
+  .media {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
+@media only screen and (max-width: 620px) {
+  /* Styles */
+  #wrapper {
+    width: 80%; }
+  .footer {
+    width: 80%; } }

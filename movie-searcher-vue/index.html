@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>Vue.js Movie Crawler</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png">
+
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="movieContainer">
+
+      <div class="title">
+        <h2>VueJS Movie Finder</h2>
+        <h4><a id="api" href="https://api.themoviedb.org">Using TheMovieDB API</a></h4>
+      </div>
+
+      <div class="search">
+        <input autofocus type="text" v-model="title" placeholder="Enter movie name" v-on:keydown.enter="findData" />
+        <button class="btn" v-on:click="findData">Search</button>
+        <button class="btn" id="clear" v-on:click="clearInput">Clear</button> <br>
+        <p id="status">{{status}}</p>
+
+      </div>
+
+      <div v-if="search" class="row">
+        <div class="image">
+          <img v-bind:src="url" alt="" />
+        </div>
+        <div class="info1">
+          <h4><i class="fa fa-film" aria-hidden="true"></i><a v-bind:href="imdbID">{{title}}</a></h4>
+          <h4>"{{tagline}}"</h4>
+
+          <h4>{{year}}</h4>
+          <h4>Popularity: {{rated}}</h4>
+          <h4>Runtime: {{runtime}}</h4>
+
+
+          <h4><span>{{genre}}</span></h4>
+          <h4 class="plot"><span>{{plot}}</span></h4>
+          <h4><span>{{language}}</span></h4>
+          <h4><i class="fa fa-globe" aria-hidden="true"></i><span>Main Country: {{country}}</span></h4>
+
+
+        </div>
+      </div>
+      <div v-if="search" class="row">
+        <div class="info2">
+          <h4>Budget: <span>${{budget}}M</span></h4>
+          <h4>Revenue: <span>${{revenue}}M</span></h4>
+        </div>
+        <div class="info3">
+
+
+          <h4>Main Production: <span>{{production}}</span></h4>
+          <a v-bind:href="imdbID"><i class="fa fa-imdb" aria-hidden="true"></i> IMDB Link</a><br>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.js'></script>
+
+  <script src="js/dist/index.js"></script>
+
+</body>
+
+</html>

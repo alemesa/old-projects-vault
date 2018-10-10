@@ -1,0 +1,122 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+.col-sm-6 {
+  margin-top: 1em;
+}
+#profile {
+  .repoStats {
+    > * {
+      margin: 0;
+    }
+  }
+}
+.repoStats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  .badge {
+    vertical-align: middle;
+  }
+  > * {
+    padding: 0 8px;
+  }
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#profile {
+  margin-top: 1rem;
+}
+
+.profilePic {
+  img {
+    width: 100%;
+  }
+  div {
+    margin-bottom: 1rem;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.list-group-item {
+  padding: 0.5em;
+}
+#titleRepos {
+  margin-top: 1rem;
+}
+
+.card-img-left {
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.25rem - 1px);
+  float: left;
+  padding-right: 1em;
+  margin-bottom: -1.25em;
+}
+
+//Footer
+.footer {
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .social {
+    > * {
+      padding: 0px 5px;
+    }
+  }
+
+  .other {
+    align-self: flex-end;
+  }
+}
+
+.fa-github:hover {
+  color: #161614;
+}
+
+.fa-linkedin:hover {
+  color: #006087;
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+.fa-github {
+  color: #161614;
+}
+
+.fa-linkedin {
+  color: #006087;
+}
+
+.fa-twitter {
+  color: #55acee;
+}
+
+.fa {
+  transition: 0.4s all ease-in;
+}
+
+.fa-beer:hover {
+  transform: rotate(90deg);
+}

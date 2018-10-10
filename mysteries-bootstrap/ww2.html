@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  TITLE    -->
+    <title>Mysterium</title>
+
+    <!--  FAVICON    -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">`
+
+    <!--   FONT-AWESOME AND GOOGLE FONTS     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+
+    <!-- BOOTSTRAP AND CSS STYLESHEETS       -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
+    <link href="styles/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+
+
+</head>
+
+
+
+
+<body>
+
+    <!--    STICKY NAVBAR-->
+
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+
+                <img class="navbar-brand" id="logo" src="img/favicon.png">
+                <a href="index.html" class="navbar-brand">Mysterium</a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+
+                    <li class="dropdown">
+                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">List
+                            <div class="caret"></div>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="index.html#monster">Monsters</a></li>
+
+
+
+                            <li><a href="index.html#places">Places</a></li>
+
+                            <li><a href="index.html#other">Others</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="active"><a href="ww2.html">WW2</a></li>
+                    <li><a href="scroll.html">Real Madrid</a></li>
+
+                    <li><a href="contact.html">Gallery</a></li>
+                    <li><a href="accordion.html">FAQ</a></li>
+
+
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn btn-default navbar-btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="disabled"><a href="#">English</a></li>
+                                <li><a href="#">French</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+                </ul>
+
+
+
+
+
+
+
+
+
+                <div class="button_menu">
+
+
+
+
+
+                    <button type="button" class="btn btn-success navbar-btn navbar-right" data-toggle="modal" data-target="#myModal">
+                        Register
+                    </button>
+
+
+                    <button type="button" class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#myModal2">
+                        Sign In
+                    </button>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!--    MODAL FOR REGISTER-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Register</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input type="text" class="form-control" id="exampleInputName1" placeholder="&#xf007; Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="&#xf0e0; Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="&#xf13e; Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="&#xf13e; Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <p>Your Interests:</p>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1"> Places
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2"> Monsters
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3"> History
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox4" value="option4"> Cover-Ups
+                            </label>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Register</button>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--    MODAL FOR SIGN IN-->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="&#xf0e0; Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="&#xf13e; Password">
+                        </div>
+
+
+
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign In</button>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--    CONTENT-->
+
+    <div class="jumbotron">
+        <h1>World War II Mysteries</h1>
+        <p>Events without explanation</p>
+        <p><a class="btn btn-default btn-md" href="#" role="button">Start Reading</a></p>
+    </div>
+
+
+
+    <div class="wrapper">
+
+        <div class="ww2_tabs">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#dunkirk" aria-controls="home" role="tab" data-toggle="tab">Dunkirk</a></li>
+                <li role="presentation"><a href="#rommel" aria-controls="profile" role="tab" data-toggle="tab">Rommel's Treasure</a></li>
+                <li role="presentation"><a href="#sydney" aria-controls="messages" role="tab" data-toggle="tab">HMAS Sydney</a></li>
+                <li role="presentation"><a href="#mueller" aria-controls="settings" role="tab" data-toggle="tab">Heinrich Mueller</a></li>
+                <li role="presentation"><a href="#mission" aria-controls="settings" role="tab" data-toggle="tab">I-52 Mission</a></li>
+                <li role="presentation"><a href="#plane" aria-controls="settings" role="tab" data-toggle="tab">B-29</a></li>
+                <li role="presentation"><a href="#bomb" aria-controls="settings" role="tab" data-toggle="tab">Pavilion Bomb</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="dunkirk">
+
+                    <div class="page-header">
+                        <h1>Dunkirk <small>Why Did Hitler Stop The German Army From Decimating The Allies At Dunkirk?</small></h1>
+                    </div>
+
+                    <div class="row">
+
+
+                        <div class="container col-md-7">
+
+                            After France’s swift and surprising fall during World War II, what remained of the French Army, along with British and Belgian troops, retreated from the mainland to the port of Dunkirk. With the ocean behind them and the Germans coming from the opposite direction, the Allies were truly between the Devil and the deep blue sea. Just before the Germans could launch an assault and reduce the thousands of Allied forces at the beach to nothing, Hitler ordered them to stand down and for the next three days.
+                            <br> The German forces looked on as the Allies were evacuated with boats, ships, yachts, and anything else that could sail.Why did Hitler order the German assault force to stand down? An assault on the Allied troops at Dunkirk would have had an unforgettable effect on the war. It would have dealt a serious blow to the British army and led to the complete defeat of the French army. Before he committed suicide, Hitler said that the order was a “sporting gesture,” meant to lure England into talks with Germany so they could end the war. Many dispute this, however. They believe that Hitler had a bitter rivalry with his generals and was trying to show them that it was he who decided where, when, and how German troops fought.
+                            <br>Others believe that Hitler was surprised by the swift fall of France, and he feared the retreat to Dunkirk was a trap. He might also have wished to prevent his tanks from moving into the unfavorable terrain, or maybe he simply wanted to give the German air force the pleasure of finishing the Allies.
+                        </div>
+                        <div class="container col-md-5">
+
+                            <img class="img-responsive img-rounded" src="img/dunkirk.jpg">
+
+                        </div>
+
+                        <div class="container col-md-5">
+                            <blockquote>
+                                <p>There were bodies floating in the water and we were under constant attack from machine-gun fire, bombing, explosions sending shrapnel in every direction.</p>
+                                <footer>Soldier on Dunkirk</footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="container col-md-7">
+                            The evacuation of Dunkirk, codenamed Operation Dynamo, took place between 26 May and 4 June 1940. A flotilla of 900 naval and civilian craft was sent across the Channel under RAF protection and managed to rescue 338,226 people.
+                            <br> During the evacuation, the Luftwaffe attacked whenever the weather allowed, reducing the town of Dunkirk to rubble and destroying 235 vessels and 106 aircraft. At least 5,000 soldiers lost their lives.
+                            <br> A further 220,000 Allied troops were rescued by British ships from other French ports - Cherbourg, Saint-Malo, Brest, and Saint-Nazaire - bringing the total of Allied troops evacuated to 558,000.
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="rommel">
+                    <div class="page-header">
+                        <h1>Rommel's Gold <small>Where the "Desert Fox" hid his treasure?</small></h1>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="container col-xs-6 col-md-2">
+
+                            <img class="img-responsive img-rounded" src="img/ww2/rommel.jpg">
+
+                        </div>
+                        <div class="container col-md-10">
+
+                            German troops fleeing North Africa after defeat by Allied forces were known to have gotten away with about 200 kilograms (400 lb) of gold, referred to as “Rommel’s gold” after German field marshal Erwin Rommel. It was stolen from Jews in Tunisia and kept in six hardened steel boxes. There are three major theories as to what happened to the gold: It was either hidden somewhere in the vast deserts of North Africa, sent to Germany (although it never got there), or deliberately sunk somewhere off the coast of Corsica, a French island in the Mediterranean Sea. The most probable theory is that it was deliberately sunk off Corsica with plans to retrieve it later.Several attempts (spanning decades) to retrieve the gold have so far been futile, although one man who has been going after it for 15 years claimed that he had an idea of its location. Anyone who finds the gold would be required to share it with the French government, which would try to look for relatives of the owners.
+                            <br> A British researcher claims to have located Rommel's elusive sunken treasure just weeks after a team of German divers scouring the Mediterranean failed to find the hoard.
+                            <br> The famed treasure has long been reputed to have been dumped somewhere off the coast of Corsica by fleeing SS men, who planned to recover it after the war. However, Terry Hodgkinson, who has been researching the missing gold for 15 years, told The Daily Telegraph that he was now "confident" he knew its exact location in waters less than a nautical mile from the town of Bastia.
+                            <br> Mr Hodgkinson, who is also a television scriptwriter, has teamed up with Corsican experts and won permission from the French authorities to enter the race to find six steel cases said to contain 440lb of gold bullion plus other precious objects pillaged from the Jewish community in Tunisia during the war.
+                        </div>
+
+
+                        <div class="container col-md-8">
+                            <h4>Who was Erwin Rommel?</h4>
+                            <p>
+                                Field Marshal Erwin Johannes Eugen Rommel (The "Desert Fox"),[1] (15 November 1891 – 14 October 1944) was an officer of the German Army in World War II.
+                                <br> He commanded the German Army in North Africa in a long struggle against the British 8th Army. He was finally defeated at El Alamein. Later in the war he commanded the German forces defending the French coast against the Allied Normandy invasion.
+                                <br> Rommel was well liked by the German public and respected by the Allies. He was thought to be chivalrous and humane, when other German leaders were not. His famous Afrikakorps was not accused of any war crimes. Soldiers captured by his army were treated well and orders to kill captured Jewish soldiers and civilians were ignored.
+                                <br> Rommel knew of the plan by senior officers to assassinate Hitler in 1944. When it failed, all concerned were tortured and executed. Hitler offered him the choice of suicide or court-martial, and he committed suicide. His death was announced as the death of a hero in battle.
+                            </p>
+                        </div>
+
+                        <div class="container col-md-4">
+                            <h5>El Alamein Battle</h5>
+                            <img class="img-responsive img-rounded" src="img/ww2/alemein.jpg">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="sydney">
+                    <div class="page-header">
+                        <h1>HMAS Sydney's Crew <small>What Happened To The HMAS Sydney‘s Crew?</small></h1>
+                    </div>
+
+                    <div class="row">
+
+
+                        <div class="container col-md-7">
+
+                            The November 1941 sinking of Her Majesty’s Australia Ship (HMAS) Sydney by the German ship HSK Kormoran was a big blow to the Australian government. It was so mysterious, surprising, and shocking that the Australian government forbade any media house from reporting the incident for almost two weeks.The whole mystery began on November 19, 1941, when the Sydney spotted an unidentified ship several hundred miles from Perth, Australia.
+                            <br> The Sydney gave chase and ordered the anonymous ship to identify itself. The unidentified ship raised a flag indicating it was a Dutch merchant ship. As the Sydney got closer (too close actually), the “merchant ship” lowered its Dutch flag and raised a German flag. As it turned out, it was a German warship called the HSK Kormoran.Not surprisingly, a naval battle began, with both ships engaging with torpedoes, machine guns, and every other weapon they had onboard. The Kormoran damaged the Sydney’s guns, turret, bridge, tower, and bow.
+                            <br>The Sydney, in return, damaged the Kormoran’s engine, effectively rendering it immobile. In time, both ships were on fire. The Kormoran’s crew abandoned their ship when their fire became unbearable, but the same could not be said of the Sydney’s crew, who turned their burning ship and sailed away from the scene. The 645-man crew was never seen again.Nine days after the ship and its crew went missing, one of its lifeboats was found at sea by another Australian warship. Another lifeboat was also found in Queensland, and a third was found with the decomposed body of a sailor three months later.
+                        </div>
+                        <div class="container col-md-5">
+
+                            <img class="img-responsive img-rounded" src="img/ww2/hmas-sydney.jpg">
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="mueller">
+                    <div class="page-header">
+                        <h1>Heinrich Mueller <small>What Happened To Heinrich Mueller?</small></h1>
+                    </div>
+
+                    <div class="row">
+
+
+                        <div class="container col-md-9">
+
+                            Heinrich Mueller was a top Nazi officer and commander of the Gestapo. Often called “Gestapo Mueller” to differentiate him from another Nazi commander of the same name, he ran spy rings for the Nazi government, was a leading figure in the Holocaust, and remains the only high-ranking Nazi official whose fate is still a mystery.Whether he died, escaped, or was killed in captivity—or deliberately freed to become a spy for the CIA or the Soviet Union—is one question that remains unanswered. There were initially speculations that he died and was buried in a grave in Berlin. The grave in question was exhumed, and the remains were found to be of two unknown soldiers and not Mueller’s.
+                            <br>Adolf Eichmann, another top Nazi commander who was arrested in 1960, said that he believed Mueller had survived.The CIA, however, made it clear that it never came across “Gestapo Mueller,” although the Allies did come across several Heinrich Muellers. As it turned out, “Heinrich Mueller” was a very popular and common name in Germany.
+                            <br> Most of these Heinrich Muellers had no middle name, so it was not unusual for their files to get mixed up.The last confirmed record of Mueller is from the day after Hitler committed suicide, when Mueller refused to escape with other Nazi forces as the Red Army advanced toward Berlin. He said that he was ready to fall with the regime and would never allow himself to be captured by the Russians.According to German historian Professor Johannes Tuchel, Heinrich Mueller died in 1945 and was buried at the German air force headquarters before he was finally moved to a Jewish cemetery in Berlin that contained several mass graves. However, we won’t be finding out anytime soon if Mueller was actually buried there, as Jewish law strictly prohibits exhumation of buried corpses.
+                        </div>
+                        <div class="container col-xs-6 col-md-3">
+
+                            <img class="img-responsive img-rounded" src="img/ww2/mueller.jpg">
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="mission">
+                    <div class="page-header">
+                        <h1>I-52 Mission <small>What Was The I-52‘s Mission?</small></h1>
+                    </div>
+
+                    <div class="row">
+
+
+                        <div class="container col-md-8">
+
+                            The I-52 was an advanced submarine used by Japan during World War II. It was sunk in the Atlantic ocean by an Allied airplane on the night of June 23, 1944. Onboard the submarine were 112 crewmen, some German scientists operating a Wehrmacht Enigma encoding machine, at least 2 tons of gold, 250 tons of tin, and 44 tons of rubber. There were also several tons of opium, tungsten, molybdenum, magnesium, and quinine.Considering the high quantity of crucial war supplies onboard, many believe that the submarine was transporting them to the German government in exchange for German military technology. Others believe that it was carrying a peace proposal between the United States and Japan. Declassified World War II military documents revealed that Yoshikazu Fujimura, Japan’s naval attache to Switzerland (who had been in talks with the United States), intended to meet with the submarine to collect a peace proposal.
+                        </div>
+                        <div class="container col-md-4">
+
+                            <img class="img-responsive img-rounded" src="img/ww2/japanese.jpg">
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="plane">
+                    <div class="page-header">
+                        <h1>B-29 <small>What Happened To The B-29 That Crashed Over Itasca County?</small></h1>
+                    </div>
+
+                    <div class="row">
+
+
+                        <div class="container col-md-8">
+
+                            On July 14, 1945, a B-29 bomber airplane piloted by pilot Edward Szycher took off from Texas to Duluth on a training mission. The plane completed its mission and was on a return trip to Texas when the smell of gasoline suddenly overwhelmed its crew as they transferred fuel between its tanks. The crew attempted to open the bomb bay doors to dump some of the fuel, but the doors wouldn’t open. They didn’t send any mayday call because they feared that operating the radio might ignite the fuel. The crew had to abandon the airplane after the fuel began to negatively affect them; their hands and legs were becoming weak. The flight engineer was already unconscious and had to be carried out of the airplane by other crew members.The pilot switched on the automatic pilot and put the airplane on a course toward Montana before bailing out with the rest of the crew. The men had never bailed out of an airplane before, yet they still managed to get to the ground, dropping safely into several fields and lakes in Itasca County, Minnesota, with only two people suffering injuries. The airplane was never seen again.Two people reported seeing the airplane crashing into a lake, and there are also speculations that it might have blown up or passed over the country and crashed into the Pacific Ocean. Another pilot had initially refused to fly the airplane because it smelled of gasoline. However, the crash seems to have been covered up by the government, and the fate of the airplane remains unknown.
+                        </div>
+                        <div class="container col-md-4">
+
+                            <img class="img-responsive img-rounded" src="img/ww2/b-29.jpg">
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div role="tabpanel" class="tab-pane" id="bomb">
+                    <div class="page-header">
+                        <h1>Pavilion Bomb <small>Who Set A Bomb At The British Pavilion in 1940?</small></h1>
+                    </div>
+
+                    <div class="row">
+
+
+                        <div class="container col-md-8">
+
+                            On July 4, 1940, New York Police Department detectives Ferdinand Socha and Joseph Lynch were called to the British pavilion at the World Trade Fair to inspect a suspicious-looking bag that was making a clock-like sound. The two men got to the scene and carried the bag to a safe corner, where they attempted to inspect its contents. Lynch cut a small hole in its side and found that it contained dynamite with an attached timing device. The bomb exploded soon after, killing Socha and Lynch and injuring four other detectives, one of whom lost an eye.No one knows who was responsible for the bomb, which left a crater 1.5 meters (5 ft) wide and 1 meter (3 ft) deep. An impressive reward of $26,000 (about $500,000 in today’s money) was offered to anyone who could solve it. Suspects included the German Bund (a US fascist group), the Irish Republican Army (IRA), several communist groups, the Christian Front, and the British government. The British government is considered a suspect due to speculations that they might have carried out the bombing to make it look like it was the handiwork of the Germans. This would have forced the United States into the war and turned them against Germany. The area in which the bomb was found was closed to the public, and only members of the British government could have accessed it. The bombing remains unsolved.
+                        </div>
+                        <div class="container col-xs-8 col-md-4">
+
+                            <img class="img-responsive img-rounded" src="img/ww2/Bomb.jpg">
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="gutter"></div>
+
+
+
+
+
+
+    <!--STICKY FOOTER-->
+
+    <div class="footer_wrap">
+        <footer class="navbar navbar-default navbar-bottom">
+
+
+            <div class="row">
+
+
+
+                <div class="container col-md-4 col-sm-6 col-xs-12">
+
+                    <ul class="social_links">
+                        <li><a class="" href="#1"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+
+                        <li><a class="" href="#2"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+
+                        <li><a class="" href="#3"><i class="fa fa-github fa-2x"></i></a></li>
+
+                        <li><a class="" href="#4"><i class="fa fa-linkedin fa-2x"></i></a></li>
+
+                        <li><a class="" href="#4"><i class="fa fa-instagram fa-2x"></i></a></li>
+
+
+
+                    </ul>
+
+                    <ul class="menu_links">
+
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="index.html#general">List</a>
+                        </li>
+
+                        <li><a href="ww2.html">WW2</a>
+                        </li>
+                        <li><a href="scroll.html">Madrid</a>
+                        </li>
+                        <li><a href="contact.html">Gallery</a>
+                        </li>
+                        <li><a href="accordion.html">FAQ</a>
+                        </li>
+
+
+
+
+                    </ul>
+
+
+
+                </div>
+
+                <div class="container col-md-4 col-sm-6 col-xs-12">
+                    Contact Us:
+                    <br>
+                    <a href="tel:+1 650-253-0000">+1 650-253-0000</a>
+
+
+                    <a href="mailto:lordofwinterfell91@gmail.com">lordofwinterfell91@gmail.com</a>
+                    <br>
+
+                    <address>
+Company Address:<br> 
+
+1600 Amphitheatre Pkwy<br>
+Mountain View, CA 94043<br>
+United States
+</address>
+
+
+                </div>
+
+
+                <div class="container col-xs-12 col-sm-12 col-md-4  ">
+
+
+                    <div class="row">
+
+                        <div class="container col-xs-12 col-sm-6 col-md-12">
+
+                            Subscribe to our newsletter:
+                            <br>
+                            <form>
+                                <input type="email" name="user_email" placeholder="&#xf0e0; Enter your email">
+                                <input class="newsletter_button" type="submit" value="Submit">
+                            </form>
+                            <br>
+
+                        </div>
+                        <div class="container col-xs-12 col-sm-6 col-md-12 ">
+                            <div class="legal">
+
+                                <div class="money_icons">
+                                    <i class="fa fa-cc-amex fa-lg"></i>
+                                    <i class="fa fa-cc-mastercard fa-lg"></i>
+                                    <i class="fa fa-cc-visa fa-lg"></i>
+                                    <i class="fa fa-cc-paypal fa-lg"></i>
+                                    <i class="fa fa-google-wallet fa-lg"></i>
+
+                                </div>
+
+                                Copyright <i class="fa fa-copyright"></i> Ale, LLC, Site built by
+                                <br> Spartacus <i class="fa fa-copyright"></i>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- My Scripts -->
+    <script async src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  TITLE    -->
+    <title>Mysterium</title>
+
+    <!--  FAVICON    -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">`
+
+    <!--   FONT-AWESOME AND GOOGLE FONTS     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+
+    <!-- BOOTSTRAP AND CSS STYLESHEETS       -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
+    <link href="styles/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+
+</head>
+
+
+
+
+<body>
+
+    <!--    STICKY NAVBAR-->
+
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+
+                <img class="navbar-brand" id="logo" src="img/favicon.png">
+                <a href="index.html" class="navbar-brand">Mysterium</a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+
+                    <li class="dropdown">
+                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">List
+                            <div class="caret"></div>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="index.html#monster">Monsters</a></li>
+
+
+
+                            <li><a href="index.html#places">Places</a></li>
+
+                            <li><a href="index.html#other">Others</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li><a href="ww2.html">WW2</a></li>
+                    <li><a href="scroll.html">Real Madrid</a></li>
+
+                    <li><a href="contact.html">Gallery</a></li>
+                    <li><a href="accordion.html">FAQ</a></li>
+
+
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn btn-default navbar-btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="disabled"><a href="#">English</a></li>
+                                <li><a href="#">French</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+
+
+                </ul>
+
+
+
+
+
+
+
+
+
+                <div class="button_menu">
+
+
+
+
+
+                    <button type="button" class="btn btn-success navbar-btn navbar-right" data-toggle="modal" data-target="#myModal">
+                        Register
+                    </button>
+
+
+                    <button type="button" class="btn btn-info navbar-btn navbar-right" data-toggle="modal" data-target="#myModal2">
+                        Sign In
+                    </button>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!--    MODAL FOR REGISTER-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Register</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input type="text" class="form-control" id="exampleInputName1" placeholder="&#xf007; Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="&#xf0e0; Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="&#xf13e; Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="&#xf13e; Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <p>Your Interests:</p>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1"> Places
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2"> Monsters
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3"> History
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox4" value="option4"> Cover-Ups
+                            </label>
+                        </div>
+
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Register</button>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--    MODAL FOR SIGN IN-->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Sign In</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="&#xf0e0; Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="&#xf13e; Password">
+                        </div>
+
+
+
+
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign In</button>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--    CAROUSEL-->
+
+    <div class="container-fluid" id="carouseldiv">
+
+        <div class="carousel slide" data-interval="4000" data-ride="carousel" id="mycarousel">
+
+
+
+            <ol class="carousel-indicators">
+
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="item active">
+
+                    <img class="img-responsive" src="img/banner0.jpg">
+                    <div class="carousel-caption">
+                        <h2>Mysteries of the World</h2>
+                        <h4>Monsters, Places and more...</h4>
+                        <a href="index.html#general" type="button" class="btn btn-default">Start Here
+                           
+                        </a>
+                    </div>
+
+
+                </div>
+                <div class="item">
+
+                    <img class="img-responsive" src="img/banner2.jpg">
+                    <div class="carousel-caption">
+                        <h2>World War 2</h2>
+                        <h4>The biggest conflict of human history</h4>
+                        <a href="ww2.html" type="button" class="btn btn-success">Click here
+                           
+                        </a>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <img class="img-responsive" src="img/banner1.jpg">
+                    <div class="carousel-caption">
+                        <h2>Chronological History about Real Madrid</h2>
+                        <h4>Greatest Football Club in the World</h4>
+                        <a href="scroll.html" type="button" class="btn btn-danger">Click here
+                           
+                        </a>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <img class="img-responsive" src="img/banner3.jpg">
+                    <div class="carousel-caption">
+                        <h2>Gallery for my girlfiend</h2>
+                        <h4>..Because she loves huskies :)</h4>
+                        <a href="contact.html" type="button" class="btn btn-default">Gallery
+                           
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <a class="right carousel-control" href="#mycarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+            <a class="left carousel-control" href="#mycarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--    CONTENT-->
+    <div class="wrapper">
+        <div class="page-header" id="general">
+            <h2>20 World Mysteries  <small> Fasten your seatbelts!</small></h2>
+        </div>
+        <div class="page-header" id="monster">
+            <h3>Monsters Mysteries  <small> They will hunt you!</small></h3>
+        </div>
+
+        <div class="row">
+            <!--            MONSTERS-->
+            <!--MEGALODON-->
+            <div class="panel panel-primary container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Megalodon: The Monster Shark</h3>
+                </div>
+                <div class="panel-body">
+                    Interestingly enough, there are many who refuse to believe that the megalodon shark is indeed extinct. Skeptics feel as if the megalodon shark may possibly be in existence deep down in the ocean. While it is true that we have not explored every inch of the world’s oceans, and it is likely that there are undiscovered species living in the depths of the waters, the belief that the megalodon shark may still be alive today has yet to be proven. Sharks are known for shedding hundreds of teeth on a regular basis; if the megalodon shark was still alive, they would be expected to shed the most teeth out of all of these sharks. Every megalodon tooth that has been found is ancient. Until a fresh megalodon tooth, a “megatooth” shark sighting, or some other form of proof has been presented, it is determined that this ancient shark is most definitely extinct.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/megalodon.jpg">
+                    </div>
+                    <div class="well well-sm">So, we’ve only explored a tiny portion of our oceans. This is true. But the VAST majority of ocean life lives in the first few hundred meters, where the sunlight can reach. Below that, life becomes highly specialized and large animals are rare. Megalodons were HUGE and would need a constant supply of large animals to feed off. Maybe megalodons didn't go extinct but evolved into a smaller, specialized shark capable of living deep in the oceans? Well then that wouldn't be a megalodon anymore. </div>
+
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=-qE7Oh4kFns">Giant Megalodon Documentary [Wildlife Nature]-[Youtube Video]</a>
+
+
+
+                </div>
+
+
+
+            </div>
+            <!--LOCH NESS-->
+            <div class="panel panel-success container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Loch Ness</h3>
+                </div>
+                <div class="panel-body">
+                    The Loch Ness Monster is a cryptid - a creature whose existence has been suggested but is not recognized by scientific consensus. Nessie, is reputedly a large unknown animal that is said to inhabit Loch Ness in the Scottish Highlands. It is similar to other supposed lake monsters in Scotland and elsewhere, though its description varies from one account to the next. Popular interest and belief in the animal's existence has varied since it was first brought to the world's attention in 1933. Evidence of its existence is anecdotal, with minimal and much-disputed photographic material and sonar readings. The most common speculation among believers is that the creature represents a line of long-surviving plesiosaurs. The scientific community regards the Loch Ness Monster as a modern-day myth, and explains sightings as including misidentifications of more mundane objects, outright hoaxes, and wishful thinking. Despite this, she remains one of the most famous examples of cryptozoology. The legendary monster has been affectionately referred to by the nickname Nessie since the 1950s.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/lochness.jpg">
+                    </div>
+                    <div class="well well-sm">On August 2012, skipper George Edwards published a photograph he claims to be "The most convincing Nessie photograph ever", which he claimed to have taken on November 2011. Edwards' photograph consists in a hump out of the water which, according to him, remained so for five to ten minutes.
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--BIG FOOT-->
+            <div class="panel panel-info container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Big Foot</h3>
+                </div>
+                <div class="panel-body">
+                    The Bigfoot phenomenon has one of the largest followings in cryptozoology with several organisations and research teams active in the United States and other parts of the world. Expeditions in to the forests of North America in search of evidence are commonplace. Alleged Bigfoot tracks, photographs, video footage and even hair samples crop up on a regular basis however no body had yet been found. Reports of Bigfoot sightings also occur quite frequently including accounts of strange whistling sounds, unidentified low-frequency growls and a feeling of a presence in the woods. Loggers and people who live in remote areas report encountering the creatures outside their homes, hunters are another source of reported sightings. Scientists discount the existence of Bigfoot and consider it to be a combination of folklore, misidentification, and hoax, rather than a living animal, because of the lack of physical evidence and the large numbers of creatures that would be necessary to maintain a breeding population. Occasional new reports of sightings sustain a small group of self-described investigators. Most reports of sightings are attributed to being various animals, particularly black bears.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/bigfoot.jpg">
+                    </div>
+                    <div class="well well-sm">Reports of the physical characteristics of the creature are varied and range from a 10-12ft tall bipedal ape with dark colored hair to a shorter human-like figure more akin to prehistoric man. Sightings tend to suggest the creature to be shy and wary of human contact, some believe the beast to exhibit an almost supernatural ability to hide itself from sight.
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--CHUPACABRA-->
+            <div class="panel panel-warning container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Chupacabra</h3>
+                </div>
+                <div class="panel-body">
+                    Bigfoot is named after its big footprints, and the dreaded chupacabra is also known for what it leaves behind: dead animals. Though goats are said to be its favorite prey (chupacabra means goat sucker in Spanish), they also have been blamed for attacks on cats, sheep, rabbits, dogs, chickens, ducks, hogs and other animals.(There is no record of a chupacabra attacking a Bigfoot, though I'd like to see that.) Descriptions of chupacabras vary widely, but many accounts suggest that the creature stands about 4 to 5 feet tall. It has short but powerful legs, long claws, and terrifying, glowing red eyes.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/chupacabra.jpg">
+                    </div>
+                    <div class="well well-sm">Chupacabras first gained wide notoriety in 1995 in Puerto Rico. No one knows for certain why or how the chupacabra suddenly sprang into existence, but many Latin Americans believe it is the unholy result of secret U.S. government experiments in the jungles of Puerto Rico. It had a heyday of about five years, when it was widely reported in Mexico, Chile, Nicaragua, Spain, Argentina and Florida — almost exclusively in Spanish-speaking areas. While widely regarded as a myth, occasional chupacabra sightings are reported in the United States, primarily in Texas and New Mexico.
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--OGOPOGO-->
+            <div class="panel panel-danger container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Ogopogo: The Canadian Lake Monster</h3>
+                </div>
+                <div class="panel-body">
+                    Canada reputedly has more lake monsters than any other country, boasting no fewer than a dozen in its cold waters. It's no surprise, therefore, that Lake Okanagan, located in British Columbia, might be home to one of the world's top 10 monsters. The lake monster, dubbed Ogopogo (from an old music hall song) is unique in that native Indians in the region used to make live sacrifices to a water spirit in the lake as they crossed in boats near the reputed home of Ogopogo, Monster Island.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/ogopogo.jpg">
+                    </div>
+                    <div class="well well-sm">Though any connection between the Indian legend and a modern monster is pure speculation, many eyewitnesses continue to report odd things in the lake. According to John Kirk, Ogopogo expert and president of the British Columbia Scientific Cryptozoology Club, there is far better evidence for the existence of a mysterious monster in Canada's Lake Okanagan than at Loch Ness. So if you happen to vacation on Okagangan's shores, bring your camera!
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            <!--KRAKEN-->
+            <div class="panel panel-default container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Kraken</h3>
+                </div>
+                <div class="panel-body">
+                    Probably no legendary sea monster was as horrifying as the Kraken. According to stories this huge, many armed, creature could reach as high as the top of a sailing ship's main mast. A kraken would attack a ship by wrapping their arms around the hull and capsizing it. The crew would drown or be eaten by the monster. What's amazing about the kraken stories is that, of all the sea monster tales we have, we have the best evidence that this creature was based on something real.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/kraken.jpg">
+                    </div>
+                    <div class="well well-sm">Tales of a huge, many armed, headed or horned sea creatures exist from ancient times. The Greek legend of the Scylla, a monster with six heads that Odysseus must sail past during his travels, is an example of this tradition. In 1555 Olaus Magnus wrote of a sea creature with "sharp and long Horns round about, like a Tree root up by the Roots: They are ten or twelve cubits long, very black, and with huge eyes..."
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+            <div class="page-header col-xs-12" id="places">
+                <h3>Places Full of Secrets <small> Lost Civilizations , Unexplained Events!</small></h3>
+            </div>
+
+            <!--AREA 51-->
+            <div class="panel panel-primary container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Area 51</h3>
+                </div>
+                <div class="panel-body">
+                    Officially, Area 51 is a remote facility used by the United States Air Force. Unofficially, it is a hotbed of rumors and conspiracy theories, mostly relating to UFO sightings. The remote location in Nevada, coupled with its intense level of secrecy (all research relating to Area 51 has been classified “Top Secret”) and its close proximity to the “Extraterrestrial Highway” (location of countless UFO sightings) have all combined to make the public deeply suspicious of what really goes on behind the gates of Area 51.
+
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/area51.jpg">
+                    </div>
+                    <div class="well well-sm">Secret? Hardly. This military base is so well known that every school kid in America recognizes its name. It has been a part of most UFO researcher's vocabulary for decades. Every military power in the world is aware of Area 51. As part of an international treaty called the "Open Skies Treaty," the United States Government is required to fly other countries over the base upon demand. The U.S. government has reciprocal privileges for their bases. Not only that, but Area 51 is not just a U.S. base, it is an international base being run by a consortium of many countries.</div>
+
+
+
+
+                </div>
+            </div>
+            <!--DYATLOV PASS-->
+            <div class="panel panel-success container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Dyatlov Pass</h3>
+                </div>
+                <div class="panel-body">
+                    This is a Russian story from a mountain known to the locals as “dead mountain”, in which 10 people attempted to scale it using a dangerous route They’d taken a wrong turn and wound up lost, and when a search team went out to look for them all that turned up were broken tents filled with supplies, campers cutting through their tent from the inside and bolting into the night The search came across a few bodies, for some reason only dressed in underwear and socks, one even attempting to climb a tree The rest were found in a ditch, dressed in the dead mens clothes, fractured skulls and one with a missing tongue Nobody could ever explain what happened here
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/dyatlov.jpg">
+                    </div>
+                    <div class="well well-sm">A body has been discovered by tourists at the infamous Dyatlov Pass in Russia’s Ural Mountains where nine hikers mysteriously died in 1959. Emergency services have reportedly momentarily lost contact with the group. An unidentified body has been discovered by tourist-hikers at the infamous Dyatlov pass in Sverdlovskaya region, according to local security officials. A group of nine tourists reportedly from Perm contacted emergency services overnight on Friday.
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--BERMUDA TRIANGLE-->
+            <div class="panel panel-info container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Bermuda's Triangle</h3>
+                </div>
+                <div class="panel-body">
+                    The Bermuda Triangle is one of the great unsolved mysteries of the world, a section of ocean in the western North Atlantic where ships and aircrafts have disappeared under deeply suspicious circumstances. Included in this list is the infamous “Flight 19”, a group of 5 bombers who went on a routine training exercise in 1945 and never returned, as well as the search and rescue plane that went looking for them the same day. There is also the case of the USSCyclops, a US Navy boat that disappeared in 1918 with all 309 crew on board as well as the Connemara IV, a pleasure yacht, found adrift in 1955 with all the crew missing.
+
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/bermuda2.jpg">
+                    </div>
+                    <div class="well well-sm">On May 18 The Cuban Coast Guard announced this morning, that they had intercepted an unmanned ship heading for the island, which is presumed to be the SS Cotopaxi, a tramp steamer which vanished in December 1925 and has since been connected to the legend of the Bermuda Triangle. The Cuban authorities spotted the ship for the first time on May 16, near a restricted military zone, west of Havana. They made many unsuccessful attempts to communicate with the crew, and finally mobilized three patrol boats to intercept it. When they reached it, they were surprised to find that the ship was actually a nearly 100-year old steamer identified as the Cotopaxi, a name famously associated with the legend of the Bermuda Triangle. There was no one on board and the ship seemed to have been abandoned for decades, suggesting that this could actually be the tramp freighter that disappeared in 1925.</div>
+
+
+
+
+                </div>
+            </div>
+            <!--ATLANTIS-->
+            <div class="panel panel-warning container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Atlantis</h3>
+                </div>
+                <div class="panel-body">
+                    Atlantis is a legendary "lost" island subcontinent often idealized as an advanced, utopian society holding wisdom that could bring world peace. The idea of Atlantis has captivated dreamers, occultists and New Agers for generations. Unlike many legends whose origins have been lost in the mists of time, we know exactly when and where the story of Atlantis first appeared. The story was first told in two of Plato's dialogues, the "Timaeus" and the "Critias," written about 330 B.C.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/atlantis.jpg">
+                    </div>
+                    <div class="well well-sm">The only way to make a mystery out of Atlantis (and to assume that it was once a real place) is to ignore its obvious origins as a moral fable and to change the details of Plato's story, claiming that he took license with the truth, either out of error or intent to deceive. With the addition, omission or misinterpretation of various details in Plato's work, nearly any proposed location can be made to "fit" his description.
+
+
+
+                    </div>
+
+                    <blockquote>
+                        <p>"But afterwards there occurred violent earthquakes and floods; and in a single day and night of misfortune all your warlike men in a body sank into the earth, and the island of Atlantis in like manner disappeared in the depths of the sea"</p>
+                        <footer>Plato in <cite title="Source Title">Timaeus/Critias</cite></footer>
+                    </blockquote>
+
+
+                </div>
+
+
+            </div>
+            <!--YONAGUNI-->
+            <div class="panel panel-danger container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Yonaguni</h3>
+                </div>
+                <div class="panel-body">
+                    Yonaguni is one of the Yaeyama Islands. It is the westernmost inhabited island of Japan and lies 108 kilometers (67 mi) from the east coast of Taiwan, between the East China Sea and the Pacific Ocean proper. Off the southern shore of Okinawa, Japan, under 20 to 100 feet of water lie enigmatic structures that may have been built by some ancient, “lost civilization”. Skeptics say the large, tiered formations are probably natural in origin (which seems crazy looking at the pictures). “Then, in late summer of the following year,” writes Frank Joseph in an article for Atlantis Rising, “another diver in Okinawa waters was shocked to see a massive arch or gateway of huge stone blocks beautifully fitted together in the manner of prehistoric masonry found among the Inca cities on the other side of the Pacific Ocean, in the Andes Mountains of South America.”
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/yonaguni.jpg">
+                    </div>
+                    <div class="well well-sm">This seems to confirm that these are manmade ruins. The architecture includes what appear to be paved streets and crossroads, large altar-like formations, staircases leading to broad plazas and processional ways surmounted by pairs of towering features resembling pylons. If it is a sunken city, it is huge. It’s been suggested that it might be the lost civilization of Mu or Lemuria
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--CUBA-->
+            <div class="panel panel-default container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Cuba's Sunken City</h3>
+                </div>
+                <div class="panel-body">
+                    In May 2001, an exciting discovery was made by Advanced Digital Communications (ADC) who were mapping the ocean bottom of Cuba’s territorial waters. Sonar readings revealed something unexpected and quite amazing 2,200 feet down: stones laid out in a geometric pattern that looked very much like the ruins of a city. “Nature couldn’t have built anything so symmetrical. This isn’t natural, but we don’t know what it is.” said Paul Weinzweig, of ADC. A great sunken city? National Geographic showed a great deal of interest in the site and was involved in subsequent investigations. In 2003, a minisub dove down to explore the structures. Paulina Zelitsky of ADC said they saw a structure that “looks like it could have been a large urban center. However, it would be totally irresponsible to say what it was before we have evidence.”
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/underwater.jpg">
+                    </div>
+                    <div class="well well-sm">Marine Geologist Manuel Iturralde called for more samples before drawing conclusions about the site, saying "We have some figures which are extremely unusual but nature is much richer than we think." Estimating that it would have taken 50,000 years for such structures to have sunken to the depth at which they were said to be found, he said "50,000 years ago there wasn't the architectural capacity in any of the cultures we know of to build complex buildings." A specialist in underwater archaeology at Florida State University added "It would be cool if they were right, but it would be real advanced for anything we would see in the New World for that time frame. The structures are out of time and out of place."
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="page-header col-xs-12" id="other">
+                <h3>Other Mysteries <small> More Unexplained Events!</small></h3>
+            </div>
+
+
+            <!--MARY CELESTE-->
+            <div class="panel panel-primary container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Mary Celeste</h3>
+                </div>
+                <div class="panel-body">
+                    On December 5th, 1872, the Mary Celeste, a British merchant ship, was found adrift in the Atlantic Ocean with all passengers and crew missing. The ship contained no sign of a struggle, had plenty of food and water, was still seaworthy and contained an almost untouched cargo. The only anomaly was that a single lifeboat was missing. Despite a lengthy investigation, none of the passengers or crew were ever seen or heard from again and this great unsolved maritime mystery led to theories of water spouts, piracy, deadly fumes and underwater earthquakes.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/mary.jpg">
+                    </div>
+                    <div class="well well-sm">The ship began its fateful voyage on November 7, 1872, sailing with seven crewmen and Capt. Benjamin Spooner Briggs, his wife, Sarah, and the couple's 2-year-old daughter, Sophia. The 282-ton brigantine battled heavy weather for two weeks to reach the Azores, where the ship log's last entry was recorded at 5 a.m. on November 25.
+
+
+                    </div>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=5PKFCVAm3qo">The True Story of the Mary Celeste [Smithsonian Channel]-[Youtube Video]</a>
+
+                </div>
+
+
+            </div>
+            <!--EASTER STATUES-->
+            <div class="panel panel-success container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Easter Island's statues </h3>
+                </div>
+                <div class="panel-body">
+                    The mysterious Moai statues of <a href="" data-toggle="tooltip" data-placement="top" title="Small Island on the South Pacific">Easter Island</a> have gazed inland for hundreds of years. And now experts believe they have finally discovered how the Rapa Nui people placed distinctive 'hats' made of red stone on top of some of the figures’ heads, more than 700 years ago. They believe that the hats, or 'pukao', were rolled up ramps to reach the top of the figures which measure up to 40ft (12 metres) tall. Despite the size of the statues, Sean Hixon an undergraduate student in archaeology and geology at the University of Oregon, believes the rolling of the bulky stones would have been relatively easy. ‘It seems like a relatively small number of people could have done it, either by levering or rolling,’ he told the 80th Annual Meeting of the Society for American Archaeology.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/easter.jpg">
+                    </div>
+                    <div class="well well-sm">An estimated 100 pukao have been discovered so far, either in place on the statues, or scattered nearby. They are made from red volcanic rock called scoria and experts are divided as to what they may have been, with suggestions ranging from hairstyles to turbans and diadems. Despite this, many agree that the red colour of the stone indicates that the pukao had ritual significance. R
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--JACK THE RIPPER-->
+            <div class="panel panel-info container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Jack the Ripper</h3>
+                </div>
+                <div class="panel-body">
+                    In 1888, in the impoverished area of Whitechapel, London, a sadistic serial killer began to murder prostitutes. Whilst it was not unusual for street walkers in this particular part of town to “disappear”, the gruesome mutilations carried out on the bodies, as well as sensational letters sent to the local press from “Jack the Ripper”, caused widespread panic throughout the city. The fact that the murders were never solved led to countless conspiracy theories as to who was “The Ripper”, with suspects including a barrister, a convicted wife killer, a doctor and an agent of the Russian secret police. But it’s still unknown that who is exactly guilty for the series of murders.
+
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/jack.jpg">
+                    </div>
+                    <div class="well well-sm">It is generally believed that there were five victims of Jack the Ripper. They were:
+                        <ul>
+                            <li>Mary Nichols, murdered on 31st August 1888</li>
+                            <li>Annie Chapman, murdered on 8th September 1888</li>
+                            <li>Elizabeth Stride, murdered on 30th September 1888</li>
+                            <li>Catherine Eddowes, also murdered on 30th September 1888</li>
+                            <li>Mary Kelly, murdered on 9th November 1888
+                            </li>
+
+
+                        </ul>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!--MONEY PIT-->
+            <div class="panel panel-warning container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Oak Island Money Pit</h3>
+                </div>
+                <div class="panel-body">
+                    Throughout history, we’ve never ceased to be enamoured with tales of buried treasure, secret inscriptions, and booby traps. But one of the most enduring treasure mysteries of all time comes from a tiny island off the coast of Nova Scotia in eastern Canada. Oak Island is the home of what is informally known as the “Money Pit,” an incredibly deep hole of incredibly elaborate construction discovered in 1795. Over two centuries of excavation have unearthed no treasure thus far, but what has been discovered is arguably just as fascinating. Underneath the surface of the pit are a series of wooden platforms, and even deeper, flooding mechanisms formed from multiple underground canals leading to water.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/moneypit.jpg">
+                    </div>
+                    <div class="well well-sm">In search for whatever the island is hiding, the money pit has attracted the attention of hundreds of search parties, including former president Franklin Delano Roosevelt, who in his youth spent a summer with fellow Harvard grads in search of the treasure. It’s truly a historical oddity, but considering that we’re no closer to finding out who dug the pit and why, after 200 years of searching, one must wonder if we ever will.
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--WOW-->
+            <div class="panel panel-danger container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+WOW! Signal</h3>
+                </div>
+                <div class="panel-body">
+                    On a summer night in 1977, Jerry Ehman, a volunteer for the Search for Extraterrestrial Intelligence, recorded the strongest hard evidence of extraterrestrial life in human history. Ehman was scanning radio waves from deep space, as his volunteer position entailed, hoping to come across a signal that bore the hallmarks of one sent by intelligent aliens. And on that night, he saw his measurements spike, in a big way. The signal lasted for 72 seconds, the longest period of time it could possibly be measured by the array that Ehman was using. It was unmistakable, and appeared to have originated from within the Sagittarius constellation near a star called Tau Sagittarii, 120 light years away. Ehman wrote the words “Wow!” on the original printout of the signal, thus its being known as the “Wow! Signal.”
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/wow.jpg">
+                    </div>
+                    <div class="well well-sm">If you’re wondering what the fuss is about the signal, think of it this way — the signal that was received was at precisely the right frequency that wouldn’t be interpreted as noise, and wouldn’t be intercepted along its journey. In other words, if we were going to send a signal out into the universe to try to communicate with an alien race, that’s exactly the frequency we would use. Despite the incredible occurrence however, all attempts to locate the signal again have failed, leading to much controversy and confusion about its origins and its meaning.
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            <!--BEALE CIPHERS-->
+            <div class="panel panel-default container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Beale Ciphers</h3>
+                </div>
+                <div class="panel-body">
+                    The Beale Ciphers are a set of three ciphertexts that supposedly reveal the location of one of the grandest buried treasures in U.S. history: thousands of pounds of gold, silver and jewels. The treasure was originally obtained by a mysterious man named Thomas Jefferson Beale in 1818 while prospecting in Colorado. Of the three ciphertexts, only the second one has been cracked. Interestingly, the U.S. Declaration of Independence turned out to be the key — a curious fact given that Beale shares his name with the author of the Declaration of Independence.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/beale.jpg">
+                    </div>
+                    <div class="well well-sm">The cracked text does reveal the county where the treasure was buried: Bedford County, Va., but its exact location is likely encrypted in one of the other uncracked ciphers. To this day, treasure hunters scour the Bedford County hillsides digging (often illegally) for the loot.
+
+
+
+                    </div>
+
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=hxPac5_bnIo">Beale Ciphers Mystery Explanation - [Youtube Video]</a>
+
+                </div>
+
+
+            </div>
+            <!--MH370-->
+            <div class="panel panel-primary container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+MH370</h3>
+                </div>
+                <div class="panel-body">
+                    The disappearance of MH370 flight carrying 12 Malaysian crew members and 227 passengers from 15 nations on July 17 remains a mystery till date. The science and the math behind this tragedy which claimed more than 235 lives could not be answered through the black box technology or airplane movements or speculation that ocean debris is the lost plane itself. This remains the most recent and biggest unresolved mystery since no rationale has come forth on the possibility of it being a human error (suffocation of passengers while the plane sank in auto pilot as a result of intelligent guesses)and the chances of it being a favorite theory cannot be ruled out in the absence of any other fact as such.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/mh370.jpg">
+                    </div>
+                    <div class="well well-sm">The Mayans foretold the beginning of the collapse of the world and the Monks say it’s the collateral price humans paid for their misgivings and their shall be more to come. While mothers weep and fathers wait to at least put a stop to the uncertainty that questions leave in wake of the devastation it caused in the lives of families of the victims, a search goes on to begin again what was started by humans in the first place , “A Conflict To Test The Waters” making it the biggest mystery today.
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--BOUVET ISLAND-->
+            <div class="panel panel-success container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Bouvet Island Lifeboat</h3>
+                </div>
+                <div class="panel-body">
+                    Lying deep in the South Atlantic, Bouvet Island has been described as among the most isolated places on Earth. The nearest land mass is Antarctica, more than 1,700 kilometers (1,100 mi) further south. No has ever inhabited the island and since plant life is unsustainable there, it is likely that no one ever will. Yet when a British expedition arrived from South Africa in 1964, they discovered an abandoned lifeboat in a lagoon on the island. Not far from the boat were oars, wood, a drum, and a copper tank. The boat was in a good condition, but the expedition party could find no trace of any passengers. The boat had no identifiable marks on it and therefore could not be traced back to any nation or shipping company.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/boat.jpg">
+                    </div>
+                    <div class="well well-sm">Even more strangely, when another expedition was sent to Bouvet Island two years later, the lifeboat had vanished. All of the other objects found near it had also disappeared. To date no one knows how the boat got there—or what happened to the people that were in it.
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--NAZCA-->
+            <div class="panel panel-info container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+Nazca Lines</h3>
+                </div>
+                <div class="panel-body">
+                    The famous Nazca lines can be found in a desert about 200 miles south of Lima, Peru. On a plain measuring approximately 37 miles long and one mile wide are etched lines and figures that have puzzled the scientific world since their discovery in the 1930s. The lines run perfectly straight, some parallel to one another, many intersecting, making the lines look from the air like ancient airport runways. This prompted Erich von Daniken in his book Chariots of the Gods to suggest that they actually were runways for extraterrestrial craft. More intriguing are the gigantic figures of 70-some animals carved into the ground – a monkey, a spider, and a hummingbird among others.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/nazca.jpg">
+                    </div>
+                    <div class="well well-sm">The puzzle is that these lines and figures are of such a scale that they can only be recognized from a high altitude. So what is their significance? Some believe they have an astronomical purpose, while others think they served in religious ceremonies. A recent theory suggests the lines lead to sources of precious water. The truth is, no one really knows.
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!--D.B COOPER-->
+            <div class="panel panel-warning container col-lg-6">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+D.B Cooper</h3>
+                </div>
+                <div class="panel-body">
+                    To this day, no one knows his real name but on Nov. 24, 1971, everyone in America was talking about the mysterious man who called himself D.B. Cooper. That day, Cooper hijacked Northwest Airlines Flight 305 and its 36 passengers using a briefcase that he said contained a bomb. "We will ask you to stay there until we get coordinated with our friend in the back," the pilot told the control tower after the plane landed in Seattle. Once $200,000 and several parachutes were delivered per Cooper's request, he demanded the plane fly him to Mexico. He also asked for the rear door to remain unlocked and the plane to be flown low and slow.
+                    <div class="panel-body">
+                        <img class="img-responsive panel-image img-rounded" src="img/cooper.jpg">
+                    </div>
+                    <div class="well well-sm">Cooper clearly had a plan, although officials didn't realize what it was until it was too late. While the plane flew to Reno, Nev. (ostensibly for a refueling stop), Cooper parachuted into the night. Despite the fact that law-enforcement officials in five different planes were tailing the jetliner, no one witnessed the jump. Though the FBI contends that Cooper couldn't have survived, it released new composite sketches in 2007 in hopes of closing the case.
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!--STICKY FOOTER-->
+
+    <div class="footer_wrap">
+        <footer class="navbar navbar-default navbar-bottom">
+
+
+            <div class="row">
+
+
+
+                <div class="container col-md-4 col-sm-6 col-xs-12">
+
+                    <ul class="social_links">
+                        <li><a class="" href="#1"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+
+                        <li><a class="" href="#2"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+
+                        <li><a class="" href="#3"><i class="fa fa-github fa-2x"></i></a></li>
+
+                        <li><a class="" href="#4"><i class="fa fa-linkedin fa-2x"></i></a></li>
+
+                        <li><a class="" href="#4"><i class="fa fa-instagram fa-2x"></i></a></li>
+
+
+
+                    </ul>
+
+                    <ul class="menu_links">
+
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="index.html#general">List</a>
+                        </li>
+
+                        <li><a href="ww2.html">WW2</a>
+                        </li>
+                        <li><a href="scroll.html">Madrid</a>
+                        </li>
+                        <li><a href="contact.html">Gallery</a>
+                        </li>
+                        <li><a href="accordion.html">FAQ</a>
+                        </li>
+
+
+
+
+                    </ul>
+
+
+
+                </div>
+
+                <div class="container col-md-4 col-sm-6 col-xs-12">
+                    Contact Us:
+                    <br>
+                    <a href="tel:+1 650-253-0000">+1 650-253-0000</a>
+
+
+                    <a href="mailto:lordofwinterfell91@gmail.com">lordofwinterfell91@gmail.com</a>
+                    <br>
+
+                    <address>
+Company Address:<br> 
+
+1600 Amphitheatre Pkwy<br>
+Mountain View, CA 94043<br>
+United States
+</address>
+
+
+                </div>
+
+
+                <div class="container col-xs-12 col-sm-12 col-md-4  ">
+
+
+                    <div class="row">
+
+                        <div class="container col-xs-12 col-sm-6 col-md-12">
+
+                            Subscribe to our newsletter:
+                            <br>
+                            <form>
+                                <input type="email" name="user_email" placeholder="&#xf0e0; Enter your email">
+                                <input class="newsletter_button" type="submit" value="Submit">
+                            </form>
+                            <br>
+
+                        </div>
+                        <div class="container col-xs-12 col-sm-6 col-md-12 ">
+                            <div class="legal">
+
+                                <div class="money_icons">
+                                    <i class="fa fa-cc-amex fa-lg"></i>
+                                    <i class="fa fa-cc-mastercard fa-lg"></i>
+                                    <i class="fa fa-cc-visa fa-lg"></i>
+                                    <i class="fa fa-cc-paypal fa-lg"></i>
+                                    <i class="fa fa-google-wallet fa-lg"></i>
+
+                                </div>
+
+                                Copyright <i class="fa fa-copyright"></i> Ale, LLC, Site built by
+                                <br> Spartacus <i class="fa fa-copyright"></i>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- My Scripts -->
+    <script async src="scripts/main.js"></script>
+</body>
+
+</html>

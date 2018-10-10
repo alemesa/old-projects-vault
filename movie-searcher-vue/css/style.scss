@@ -1,0 +1,211 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800');
+//Main Colors
+$main_color: #1565c0;
+$secondary_color: #35495e;
+@font-face {
+  font-family: Radnika;
+  src: url(./fonts/Radnika-Medium.otf);
+}
+
+body {
+  height: 100%;
+  background-color: #ce5a57;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23444c57' fill-opacity='0.86'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+* {
+  font-family: Radnika, sans-serif;
+  color: #202020;
+  font-weight: 400;
+}
+
+img {
+  width: 230px;
+}
+
+#app {
+  background-color: #fff;
+  box-shadow: 0 3px 2px #777;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 1em auto;
+  border-radius: 2px 2px 2px 2px;
+}
+
+h4 {
+  i {
+    margin-right: 5px;
+  }
+}
+
+//Mixin for flex properties
+@mixin flex($direction:row,
+$justify-content:flex-start,
+$wrap:wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  flex-wrap: $wrap;
+}
+
+//Mixin for the color buttons
+@mixin btncolor($color) {
+  color: $color;
+  border-color: $color;
+  &:hover {
+    border-color: $color;
+    box-shadow: 0 0 40px 40px $color inset;
+  }
+}
+
+//Row
+.row {
+  @include flex(row,
+  center,
+  wrap);
+  margin-bottom: 1em;
+  .image {
+    flex: 1 1 40%;
+    margin: 0 auto;
+    text-align: center;
+    img {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .info1 {
+    line-height: 1.4;
+    word-spacing: 1px;
+    color: rgba(black, 0.7);
+    flex: 1 1 59%;
+    a {
+      color: rgba(black, 0.7);
+      text-decoration: none;
+      border-bottom: 1px solid black;
+    }
+    * {
+      margin-top: 9px;
+      margin-bottom: 9px;
+    }
+  }
+  .info2 {
+    padding-left: 1em;
+    flex: 1 1 45%;
+    * {
+      margin-top: 9px;
+      margin-bottom: 9px;
+    }
+  }
+  .info3 {
+    padding-left: 1em;
+    flex: 1 1 45%;
+    span {
+      margin-left: 5px;
+    }
+    img {
+      vertical-align: middle;
+      margin-bottom: 0.75em;
+    }
+    * {
+      margin-top: 9px;
+      margin-bottom: 9px;
+    }
+  }
+}
+
+body {
+  color: #212121;
+}
+
+.row:nth-child(odd) {
+  padding-top: 10px;
+}
+
+//Title
+.title {
+  @include flex(row,
+  center,
+  wrap);
+  align-items: baseline;
+  * {
+    padding: 0px 4px;
+  }
+}
+
+#status {
+  line-height: 1.5em;
+}
+
+.search {
+  @include flex(row,
+  center,
+  wrap);
+  * {
+    margin: 4px 4px;
+  }
+}
+
+.flex-container {
+  @include flex(row,
+  flex-start,
+  wrap);
+  * {
+    padding-right: 8px;
+  }
+}
+
+//Buttons
+input {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+  width: 220px;
+  padding: 4px;
+  outline: inherit;
+}
+
+.btn {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+  padding: 4px;
+  &:hover {
+    border: 1px solid;
+    color: #fff;
+    outline: 0;
+  }
+  &:focus {
+    outline: 0;
+  }
+  @include btncolor($main_color);
+}
+
+#clear {
+  @include btncolor(#d32f2f);
+  &:hover {
+    border: 1px solid;
+    color: #fff;
+    outline: 0;
+  }
+}
+
+.icons {
+  width: 32px;
+  height: 32px;
+}
+
+.fa-imdb {
+  color: #eccd4c;
+}

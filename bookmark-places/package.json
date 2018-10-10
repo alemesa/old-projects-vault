@@ -1,0 +1,30 @@
+{
+  "name": "bookmark-places",
+  "version": "1.0.0",
+  "description": "Bookmarking App using Bulma and localStorage",
+  "main": "main.js",
+  "dependencies": {
+    "bulma": "^0.4.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-surge": "^0.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alemesa1991/Bookmark-Places.git"
+  },
+  "author": "Alejandro Mesa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alemesa1991/Bookmark-Places/issues"
+  },
+  "homepage": "https://github.com/alemesa1991/Bookmark-Places#readme"
+}

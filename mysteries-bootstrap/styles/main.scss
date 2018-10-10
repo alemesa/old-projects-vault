@@ -1,0 +1,350 @@
+//VARIABLES
+$center:0 auto;
+$width:80%;
+$full_width:100%;
+//MIXINS
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin centered_width ($width) {
+    width: $width;
+    margin: 0 auto;
+}
+
+//MAIN STYLES
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include flex(column);
+    min-height: 100vh;
+    padding-top: 42px;
+    .gutter {
+        flex-grow: 1;
+    }
+}
+
+nav {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.dropdown .btn {
+    border-width: 0px !important;
+}
+
+.wrapper {
+    @include centered_width(80%);
+}
+
+.row {
+    @include flex(row);
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    [class*='col-'] {
+        @include flex(column);
+    }
+}
+
+blockquote {
+    font-size: 0.9em;
+}
+
+.row > * {
+    align-self: stretch;
+}
+
+//NAVBAR
+nav {
+    margin: 0 auto;
+    .container-fluid {
+        width: 80%;
+    }
+}
+
+.navbar-brand {
+    font-family: 'Patua One', cursive;
+    font-size: 160%;
+}
+
+#logo {
+    padding: 12px !important;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.dropdown-menu {
+    text-align: center;
+}
+
+.button_menu {
+    text-align: center;
+    padding: 0;
+    button {
+        margin-left: 5px;
+    }
+}
+
+input {
+    font-family: FontAwesome;
+}
+
+//CAROUSEL
+#carouseldiv {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.carousel-caption {
+    padding-bottom: 5%;
+    h2,
+    h4 {
+        font-weight: bold;
+        color: white;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+    h4 {
+        padding-top: 0 !important;
+    }
+}
+
+//FOOTER
+.footer_wrap {
+    background-color: #2C3E50;
+}
+
+.navbar-bottom {
+    background-color: #2C3E50 !important;
+    color: white;
+    border-color: #2C3E50 !important;
+    padding-top: 20px;
+    @include centered_width(80%);
+    > * {
+        padding-top: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    div > a {
+        color: white !important;
+    }
+    div > a:hover {
+        color: black !important;
+    }
+}
+
+.panel-image {
+    width: auto;
+    height: auto;
+}
+
+.social_links {
+    @include flex(row);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    * {
+        padding-left: 5px;
+        list-style-type: none;
+    }
+}
+
+.menu_links {
+    padding-top: 10px;
+    padding-left: 0;
+    * {
+        padding-left: 5px;
+        list-style-type: none;
+    }
+    a {
+        color: white !important;
+    }
+    a:hover {
+        color: black !important;
+    }
+}
+
+#monster,
+#places,
+#other {
+    padding-top: 80px;
+    margin-top: -80px;
+    position: relative;
+}
+
+#monster {
+    z-index: 99;
+}
+
+#places {
+    z-index: 98;
+}
+
+#other {
+    z-index: 97;
+}
+
+//OTHER PAGES
+.jumbotron {
+    @include flex(column);
+    align-items: center;
+    @include centered_width(100%);
+    background-image: url("../img/jumbotron.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 400px;
+    p {
+        color: white;
+    }
+}
+
+.scroll_div:nth-child(even) {
+    //    background-color: #375A7F;
+    background-color: #4F4F4F;
+}
+
+.scroll_div {
+    padding: 10px;
+    p {
+        padding-top: 10px;
+    }
+    h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #663399;
+    }
+    h5 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #1E8BC3;
+    }
+}
+
+#realmadrid {
+    background-image: url("../img/champions.jpg");
+    justify-content: flex-end;
+    h2,
+    h4 {
+        font-weight: bold;
+        color: white;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+}
+
+.sidebar {
+    padding-top: 50px;
+}
+
+.question form {
+    @include centered_width(95%);
+}
+
+.row > .container {
+    padding-bottom: 10px;
+}
+
+.tab-pane .row div {
+    padding: 5px;
+}
+
+
+/*FIRST BREAKPOINT*/
+
+@media only screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    #monster,
+    #places,
+    #other {
+        padding-top: 150px;
+        margin-top: -150px;
+        position: relative;
+    }
+}
+
+
+/*SECOND BREAKPOINT*/
+
+@media only screen and (min-width: 992px) {
+    .specific_question {
+        border-left: 1px solid lightgrey;
+    }
+    #monster,
+    #places,
+    #other {
+        padding-top: 80px;
+        margin-top: -80px;
+        position: relative;
+    }
+}
+
+
+/*THIRD BREAKPOINT*/
+
+
+/*FONT AWESOME COLOURS*/
+
+.fa-facebook-official {
+    color: #3A5795;
+}
+
+.fa-twitter-square {
+    color: #1DA1F2;
+}
+
+.fa-github {
+    color: black;
+}
+
+.fa-linkedin {
+    color: #1D87BD;
+}
+
+.fa-instagram {
+    color: #58453E;
+}
+
+.fa-cc-amex {
+    color: #3FA2DB;
+}
+
+.fa-cc-mastercard {
+    color: #FE9903;
+}
+
+.fa-cc-visa {
+    color: #0023A0;
+}
+
+.fa-cc-paypal {
+    color: #009BE1;
+}
+
+.fa-google-wallet {
+    color: #D44F46;
+}
+
+
+/*# sourceMappingURL=main.css.map */
+
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bookmark Places</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+
+<body>
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Bookmark Places
+                </h1>
+                <h2 class="subtitle">
+                    Using Bulma and localStorage
+                </h2>
+            </div>
+            <!--
+                <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            -->
+            <div class="container logo-container">
+                <img id="logo" src="./images/planet-earth.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+<div id="wrapper">
+
+    <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+
+            <h1  class="title">Enter a Place</h1>
+            <h2 class="subtitle">Both fields must be entered</h2>
+
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input id="inputPlace"class="input" type="text" placeholder="Place">
+                    <span class="icon is-small is-left">
+      <i class="fa fa-map-marker"></i>
+    </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input id="inputCountry" class="input" type="text" placeholder="Country">
+                    <span class="icon is-small is-left">
+      <i class="fa fa-globe"></i>
+    </span>
+                </p>
+            </div>
+            <div id="errorNotification" class="notification is-danger hide">
+                Both fields must be entered
+            </div>
+            <div class="field">
+                <p class="control">
+                    <button id="submitButton" class="button is-success">
+      Submit
+    </button>
+                </p>
+            </div>
+
+   </div>
+    </div>
+   
+
+    <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+
+             <h1 id="titleColumns" class="title">Bucket List <span class="tag is-info">0</span> </h1>
+            <h2 id="instructions" class="subtitle">Try reopening the window after entering some places</h2>
+
+<div id="placesToGo">
+<!--Display -->
+</div>
+
+
+        </div>
+    </div>
+     </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon" href="https://github.com/alemesa">
+                    <i class="fa fa-github fa-2x"></i>
+                </a>
+                <a class="icon" href="https://www.linkedin.com/in/alejandro-mesa-suarez-604916a2/">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </a>
+                <a class="icon" href="https://twitter.com/alelikesramen">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </a>
+                <a class="icon" href="https://www.instagram.com/alemesa12">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>Made with <i class="fa fa-beer"></i></p>
+                
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+
+    <script type="text/javascript" src="./js/dist/main.js"></script>
+</body>
+
+</html>
